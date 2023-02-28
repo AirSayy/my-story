@@ -1,0 +1,21 @@
+ <form method="POST" action="/signup">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  {{#if signupErrors.username}}
+    <p>{{signupErrors.username}}</p>
+  {{/if}}
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  {{#if signupErrors.email}}
+    <p>{{signupErrors.email}}</p>
+  {{/if}}
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  {{#if signupErrors.password}}
+    <p>{{signupErrors.password}}</p>
+  {{/if}}
+
+  <button type="submit">Sign Up</button>
+</form>

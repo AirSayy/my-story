@@ -1,5 +1,4 @@
 const GoogleStrategy = require('passport-google-oauth20').Strategy
-const LocalStrategy = require('passport-local').Strategy
 const mongoose = require('mongoose')
 const User = require('../models/User')
 
@@ -35,18 +34,7 @@ module.exports = function(passport){
         }
     )),
 
-    passport.use(new LocalStrategy(
-        function(username, password, done) {
-          User.findOne({ username: username , password: password}, function (err, user) {
-            if (err) { return done(err); }
-            if (!user) { return done(null, false); }
-            if (!user.verifyPassword(password)) { return done(null, false); }
-            return done(null, user);
-          });
-        }
-      ));
     
-
     passport.serializeUser( (user , done) => {
         done(null , user.id)
     })

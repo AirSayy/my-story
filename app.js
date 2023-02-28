@@ -6,6 +6,7 @@ const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const methodOverride = require('method-override')
 const passport = require('passport')
+const LocalStrategy = require('passport-local').Strategy
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const flash = require('express-flash')
@@ -18,6 +19,7 @@ dotenv.config({ path : './config/config.env'})
 
 // passport config
 require('./config/passport')(passport)
+require('./config/local-passport')(passport)
 
 
 // call the connectDB function
@@ -90,6 +92,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // routes
 app.use('/' , require('./routes/index'))
+app.use('/signup' , require('./routes/index'))
+app.use('/local-auth' , require('./routes/local-auth'))
 app.use('/auth' , require('./routes/auth'))
 app.use('/stories' , require('./routes/stories'))
 

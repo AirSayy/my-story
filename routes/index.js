@@ -16,6 +16,16 @@ router.get('/', ensureGuest, (req , res) => {
     
 })
 
+router.get('/signup', ensureGuest ,(req , res) => {
+    res.render('signup',{
+        layout: 'signup'
+    } )
+    
+    
+})
+
+
+
 // description : dashboard
 // route  GET /dashboard
 
