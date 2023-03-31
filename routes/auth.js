@@ -28,6 +28,13 @@ router.get('/logout', function(req, res, next) {
     });
   });
 
+  router.get('/profile', function(req, res, next) {
+    req.profile(function(err) {
+      if (err) { return next(err); }
+      res.redirect('/dashboard');
+    });
+  });
+
   
 
 module.exports = router
