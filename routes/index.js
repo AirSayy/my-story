@@ -43,8 +43,8 @@ router.get('/dashboard', ensureAuth, async (req , res) => {
     
 })
 
-// description : dashboard
-// route  GET /dashboard
+// description : profile
+// route  GET /profile
 router.get('/profile', ensureAuth, async (req , res) => {
     
     try{
