@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: rgb(250, 167, 181);
 }
 p{
     margin: 10px 0 !important;
@@ -19,4 +19,16 @@ p{
 
 .img-small{
     width: 180px;
+}
+.card-content{
+    background: rgb(243, 215, 215);
+}
+.login-container{
+    border-radius: 15px;
+    
+}
+.card{
+    border: 2px solid rgb(98, 97, 97);
+    margin-top: 40%;
+    border-radius: 15px;
 }

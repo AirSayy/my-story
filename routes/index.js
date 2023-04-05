@@ -46,7 +46,7 @@ router.get('/dashboard', ensureAuth, async (req , res) => {
 // description : profile
 // route  GET /profile
 router.get('/profile', ensureAuth, async (req , res) => {
-    
+    console.log(req)
     try{
     
         const stories = await Story.find({user:req.user.id}).lean()
