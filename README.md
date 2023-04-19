@@ -1,6 +1,6 @@
 
 # My-story
- My Story is a full-stack web application that allows users to share their transition to Tech stories. The application is built using Node.js, Express.js, MongoDB, Handlebars, Passport.js, Google OAuth, HTML, CSS, and Tailwind CSS.
+ My Story is a full-stack web application that allows users to share their transition to Tech stories. The application is built using Node.js, Express.js, MongoDB, Handlebars, Passport.js, Google OAuth, HTML, CSS, and Handlebars..
 
 ## Installation
 Clone the repository: git clone https://github.com/AirSayy/my-story.git/
