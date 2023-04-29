@@ -1,5 +1,5 @@
 
-# My-story
+# My-story App
  My Story is a full-stack web application that allows users to share their transition to Tech stories. The application is built using Node.js, Express.js, MongoDB, Handlebars, Passport.js, Google OAuth, HTML, CSS.
 
 ## Installation
